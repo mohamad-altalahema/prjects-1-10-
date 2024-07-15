@@ -1,0 +1,50 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+
+body{
+    display: flex;
+    background-color: #0c0c38;  
+    justify-content: center;
+    align-items: center;
+   /* text-align: center;*/
+    height: 100vh;
+
+
+}
+form{
+
+    display: flex;
+    width: 80%;
+    background : #121262;
+    padding: 10px;
+    gap: 5px;
+    flex-wrap: wrap; /*تنسيق لكل الاحجام*/
+
+
+
+
+}
+form input{
+    color: white;
+    padding: 5px  10px;
+    background:  hsl(240, 93%, 24%);
+    border: none;
+    width: 200px;
+    flex-grow: 1; /*استعلال المساحه المنبقيه*/
+
+    
+
+}
+button{
+    background: #14a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:5px 10px ;
+    flex-basis: 30px;
+    flex-wrap: 1;
+
+}

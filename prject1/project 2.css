@@ -1,0 +1,114 @@
+/*--------------------تنسيق الصفحه---------------------*/
+
+*{                      /*صفرناهن عشان كل اشي في البرنامج يرحع لاصلو لامكانيه التعديل عليه لاحقا*/
+    margin: 0;
+    padding: 0;
+}
+
+/*coler bady , coler and taype line*/
+body{
+    background: #222;
+    color: wheat;
+    font-family: system-ui;
+}
+/*تهيات الكونتينر*/
+.crud{
+    width: 80%;
+    margin: auto;  
+}
+
+
+
+/*------------------------head---------------------------*/
+/*توسيط النص*/
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+
+/*------------------------input---------------------------*/
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: wheat;
+}
+/* خصاءص عند التاشير عليه*/
+input:focus{
+    background: #000;
+    transform: scale(1.1);
+}
+
+
+/*div class price*/
+.price input{
+    width: 20%;
+
+}
+
+
+/*input smoll*/
+#total{
+    background:#a00d02 ;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'total';
+}
+
+/*button*/
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background:#310044 ;
+    color: wheat;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+button:hover{
+    background: #570266;
+    letter-spacing:2px ;  /* التباعد بين الحروف*/
+}
+
+
+
+/*------------------------output---------------------------*/
+
+.btnsearch{
+    display: flex;                    /*تجويلهن حنب بعض*/
+    justify-content: space-between;    
+    
+}
+.btnsearch button{
+    width: 45%;
+
+}
+/*delet all*/
+#deleteAll{
+    margin: 20px 0;
+}
+/*tabole*/
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+
+}
+table th{
+    text-transform: uppercase;
+}
+th , td{
+    padding:5px ;
+}

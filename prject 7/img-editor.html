@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img-editor</title>
+    <link rel="stylesheet" href="img-editor.css">
+    
+</head>
+<!-- (المشروع= responsable )مشروع فلاتر الصور -->
+<body>
+    <div class="contaner">
+
+
+
+     <!------------class img------------->
+
+        <div class="img">
+
+            <div class="img-box">
+                <img id="img"><!--src="mohamad.jpeg"-->
+                <canvas id="canvas"></canvas> <!--منعملو لتنويل الصوره نع التاثيرات الفلاتر-->
+            </div>
+    
+    
+            <div class="upload">
+                <label for="upload">uplood</label>
+                <input type="file" id="upload" >
+            </div>
+
+        </div>
+
+        
+
+
+
+
+
+    <!------------class filters--------------->
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                    
+                </li>
+
+                <li>
+                    <label for="contrast">contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                    
+                </li>
+
+                <li>
+                    <label for="brigtness">brigtness</label>
+                    <input type="range" id="brigtness" min="0" max="200" value="100">
+                    
+                </li>
+
+                <li>
+                    <label for="sepia">sepia</label>
+                    <input type="range" id="sepia" min="0" max="200" value="0">
+                    
+                </li>
+
+                <li>
+                    <label for="grayscale">grayscale</label>
+                    <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                    
+                </li>
+
+                <li>
+                    <label for="blur">blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                    
+                </li>
+
+                <li>
+                    <label for="hue-rotate">hue rotate</label>
+                    <input type="range" id="hue-rotate"  min="0" max="350" value="0">
+                    
+                </li>
+
+                <li id="lastul">
+                    <a download="image" id="download">download</a> <!--dawnload (name file use dawnliad)-->
+                    <span onclick="resetvalue()">rest</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
+
+    <script src="img-editor.js"></script>
+</body>
+</html>

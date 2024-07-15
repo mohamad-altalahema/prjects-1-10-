@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background:#928cff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.input{
+    background: white;
+    height: 120px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ h2{
+    font-size: 30px;
+    text-align: center;
+}
+ .input .data{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+ }
+ .data input{
+    padding: 3px;
+    outline: none;
+    border: 1px solid #928cff;
+ }
+ .data button{
+    cursor: pointer;
+    background: #928cff;
+    color: white;
+    border: none;
+    padding: 5px;
+ }
+
+ /******************* box **********************/
+ .list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start; /*جمله مهمه لحعل اطوال الصنادق حسب المحتوى فيها وليس متساويات*/
+    
+
+ }
+ .list .box{
+    background: white;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    
+
+ }
+ 
+ .item{
+    background: #928cff;
+    padding: 10px;
+    margin: 4px;
+    cursor:move ;
+    color: white;
+
+ }

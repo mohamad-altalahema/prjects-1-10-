@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background: linear-gradient(#01012e,#240019); /*لجمع لنونين مع بعظ*/
+    height: 100dvh;
+    font-family: system-ui;
+   
+   
+}
+section{
+    background: url(stars1.png);
+    height: 100vh;
+    display: flex;
+
+    /* ---y الثانيه تتحكم في محور ,.x الاوله تتحكم في مجور ---*/
+
+    justify-content: center; /* body بالنسبه لل */
+   align-items: center;      /*sectionبالنسبه ل */
+}
+
+
+ul{
+    text-align: center;
+    
+}
+
+/****************************************/
+
+ul:hover li a{             /*ليس على القاءمه كامله a هنا عند الاشاره على القاءمه نفذ التغير على */
+    opacity: 0;  /*  بشكل كاملa  اخفاء */
+}
+
+/****************************************/
+    
+
+
+ul li{
+    list-style: none; /*لاشاله النقط في القاءمه*/
+    margin: 14px 0;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight:500px ;
+    letter-spacing:4px ; /*لتباعد الحروف عن بعظ*/
+    background:darkblue;
+    padding: 6px 15px;
+    border-radius: 20px;
+    display: inline-block; /*جمله مهمه حدا لتحويله الى بلوك و ذالك يمكنها من تنفيذ الخصاءص عليها*/
+   transition: 0.5s;
+
+   position: relative;
+   z-index: 10;
+
+
+}
+ul li a:hover{
+    transform: scale(1.5);
+    background: darkmagenta;
+    opacity: 1; /*اضهر العنصر المشار عليه فقط*/
+
+}
+
+ul li::after{
+    content: attr(data-text);
+    color: white;
+    /*داءما قبل استحدام حمل تحريك النص تسنحدم هذه الحمله*/
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 50px;
+    pointer-events: none;/*العينا التاشير عليه لاعدم ظهوره عند التاشير عليه */
+    transition: 0.5s;
+
+}
+
+ul li:hover:after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+
+}
+
+/*-------------عمل صوره الكوكب-- ------------*/
+ul li::before{
+    content: ''; /* before and after هاذ جمله محجوزه مع */
+    width: 180px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,70%);
+    border-radius: 50%;
+    box-shadow:0 0 80px orangered;  /*الوهح الشاع*/
+    opacity: 0;
+    transition: 0.5s;
+}
+ul li:hover::before{
+    opacity: 0.5;
+   width: 80px;
+}
+
+
+

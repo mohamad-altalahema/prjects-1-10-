@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: #333;
+  
+    
+}
+
+.contaner{
+    background-color: #222;
+    border-radius: 10px;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+
+}
+
+/*   coordination img   */
+.img{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.img img ,canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+    
+}
+.img .upload input{
+    display: none;
+}
+
+.img .upload label{
+    color: white;
+    border: 2px white dashed ;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*    coordination filters    */
+
+
+
+.filters ul, .filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    direction: rtl;
+}
+
+.filters ul li label{
+    color: white;
+}
+.filters #last-ul{
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+
+
+}
+.filters ul li a , span{
+    color: white;
+    padding: 10px 20px;
+    background: green;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+
+
+
+/*    responsable    */
+
+@media screen and (max-width:650px){
+    .contaner{
+        grid-template-columns: 1fr ;
+        gap: 50px;
+
+    }
+    
+}

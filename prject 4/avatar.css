@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    background-image: linear-gradient(to right ,#01022d,#000);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.container{
+    background-image: linear-gradient(to right,#01022de5 30%,#00000088),url(avatar.webp);
+    background-position: center;
+    width: 90%;
+    height: 640px;
+   
+   
+}
+.container:hover{
+    background-image: linear-gradient(to right,#01022de5 30%,transparent),url(avatar.webp);
+
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    font-size:30px;
+    text-transform: uppercase;
+
+
+}
+.navbar{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+.navbar a:hover{
+    color: rgb(200, 194, 243);
+
+}
+
+/*********************contint**************************/
+
+.contint{
+    width: 50%;
+    color: white;
+    margin-top: 50px;
+    padding: 30px;
+
+}
+.contint h1{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.contint p{
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+
+}
+.contint button{
+    font-size: 30px;
+    padding: 6px  10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+}
+
+.contint button:hover{
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+
+
